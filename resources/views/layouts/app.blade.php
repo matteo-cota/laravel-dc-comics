@@ -6,16 +6,15 @@
     <title>DC Comics Archive</title>
     @vite(['resources/css/app.scss']) <!-- Include CSS con Vite -->
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="{{ route('comics.index') }}">Home</a>
-        </nav>
-    </header>
 
+<body>
     <main>
-        @yield('content')
+        <div class="container">
+            @yield('content')
+        </div>
     </main>
+
+
 
     <footer>
         <p>&copy; 2024 DC Comics Archive</p>
